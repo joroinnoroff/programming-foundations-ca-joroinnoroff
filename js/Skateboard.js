@@ -1,7 +1,7 @@
 // skateboard.js
 
 const skateboard = {
-  brand: "Element",                       // String
+  brand: "Real",                       // String
   model: "Nyjah Huston",                  // String
   deckLength: 32,                         // Number (in inches)
   deckWidth: 8,                           // Number (in inches)
