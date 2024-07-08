@@ -5,41 +5,69 @@
 Jorgen Oino - NorOFF
 Selftaught.js - learntoprogram.js
 #Object 1
+# Skateboard Object
 
-- Self Taught Programmer
-  Contains the properties
-  name = string
-  Author = string
-  Pages = number
-  published = number
-  Language = String
-  Publisher = string
-  On / SalesplaceOnline = Boolean and function
+This object represents a skateboard with various features and functionalities.
 
-  4 strings, 2 numbers, 1 boolean and 1 function
+## Properties
 
-#object 2
--Learn to Program
+- **brand (String)**: The brand of the skateboard.
+  - Example: `"Element"`
 
-let learningresource1: {
-name: string;
-price: Number;
-typeof: string;
-adress: string;
-classes: string;
-}
+- **model (String)**: The model of the skateboard.
+  - Example: `"Nyjah Huston"`
 
-let learningresource2: {
-name: string;
-price: number;
-typeof: string;
-adress: string;
-classes: string;
-}
+- **deckLength (Number)**: The length of the skateboard deck in inches.
+  - Example: `32`
 
-function Resources({ arg1, arg2, arg3, arg4 }: {
-arg1: any;
-arg2: any;
-arg3: any;
-arg4: any;
-}): void
+- **deckWidth (Number)**: The width of the skateboard deck in inches.
+  - Example: `8`
+
+- **material (String)**: The material used for the skateboard deck.
+  - Example: `"Maple"`
+
+- **trucks (String)**: The brand of the trucks used in the skateboard.
+  - Example: `"Independent"`
+
+- **wheels (String)**: The brand of the wheels used in the skateboard.
+  - Example: `"Spitfire"`
+
+- **isAvailable (Boolean)**: Indicates if the skateboard is available.
+  - Example: `true`
+
+- **features (Array)**: A list of features of the skateboard.
+  - Example: `["Kicktail", "Concave"]`
+
+## Methods
+
+- **toggleAvailability()**: Toggles the availability status of the skateboard.
+
+## Example Usage
+
+Here's how you can create and use the `skateboard` object:
+
+```javascript
+const skateboard = {
+  brand: "Element",
+  model: "Nyjah Huston",
+  deckLength: 32,  // in inches
+  deckWidth: 8,    // in inches
+  material: "Maple",
+  trucks: "Independent",
+  wheels: "Spitfire",
+  isAvailable: true,
+  features: ["Kicktail", "Concave"],
+  toggleAvailability: function() {
+    this.isAvailable = !this.isAvailable;
+  }
+};
+
+console.log(skateboard);
+
+// Toggle the availability status
+skateboard.toggleAvailability();
+console.log(skateboard.isAvailable); // false
+
+// Toggle it back
+skateboard.toggleAvailability();
+console.log(skateboard.isAvailable); // true
